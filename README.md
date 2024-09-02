@@ -1,13 +1,16 @@
 # sitioweb
 
+
 Comandos para activar 
 
------->para activar WINDOW 11:        irm https://get.activated.win | iex        
------->para activar OFFICE 2024:      irm https://massgrave.dev/get | iex
+------>para activar WINDOW 11:        "irm https://get.activated.win | iex"  
+
+------>para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex"
 
 Atajos para Window 10
------->crear punto de restauracion     W+R : systempropertiesprotection
------->deshabilitarcuenta de usuario   W+R : lusrmgr.msc
+------>crear punto de restauracion     W+R : "systempropertiesprotection"
+
+------>deshabilitarcuenta de usuario   W+R : "lusrmgr.msc"
 
 
 Abrir el Administrador de tareas:
