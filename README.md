@@ -21,31 +21,31 @@ Abrir la Configuración:
 Windows + I
 Acceder a Configuración del sistema (msconfig):
 
-Windows + R → msconfig
+Windows + R → "msconfig"
 Abrir el Administrador de dispositivos:
 
-Windows + X → M
+Windows + X → "M"
 Acceder al Panel de control:
 
-Windows + R → control
+Windows + R → "control"
 Acceder al Editor del Registro:
 
-Windows + R → regedit
+Windows + R → "regedit"
 Abrir la consola de comandos (CMD):
 
-Windows + R → cmd
+Windows + R → "cmd"
 Abrir el Símbolo del sistema como administrador:
 
-Windows + X → A
+Windows + X → "A"
 Acceder a Propiedades del sistema avanzado:
 
-Windows + R → sysdm.cpl
+Windows + R → "sysdm.cpl"
 Acceder a la configuración de red (Conexiones de red):
 
-Windows + R → ncpa.cpl
+Windows + R → "ncpa.cpl"
 Apagar o reiniciar el equipo:
 
-Windows + X → U → U (Apagar) o R (Reiniciar)
+Windows + X → U → "U" (Apagar) o "R" (Reiniciar)
 Acceder a las opciones de energía:
 
-Windows + X → O
+Windows + X → "O"
