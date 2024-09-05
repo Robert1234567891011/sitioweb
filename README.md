@@ -52,3 +52,6 @@ Windows + X → U → "U" (Apagar) o "R" (Reiniciar)
 Acceder a las opciones de energía:
 
 Windows + X → "O"
+
+Cómo corregir los puertos USB que no funcionan en Windows 10
+"https://purosistemas.com/como-corregir-los-puertos-usb-que-no-funcionan-en-windows-10/"
