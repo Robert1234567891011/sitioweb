@@ -56,4 +56,5 @@ Windows + X → "O"
 Cómo corregir los puertos USB que no funcionan en Windows 10
 "https://purosistemas.com/como-corregir-los-puertos-usb-que-no-funcionan-en-windows-10/"
 
-comando en Pawer Shell para verificar las cobdiciones de USB---->"msdt.exe -id devicediagnostics"
+comando en Pawer Shell para verificar las condiciones de USB---->"msdt.exe -id devicediagnostics"
+Link de descarga de USBDeview: Cómo utilizar para solucionar problemas USB---------->"https://mega.nz/file/XopmnDQB#URKUuEdpNLiwApQNt32hTi1DqlAfB5aF1EmKLtkatkE"
