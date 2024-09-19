@@ -1,5 +1,7 @@
 # sitioweb
 
+generador de CRUD con larabel----->https://github.com/awais-vteams/laravel-crud-generator
+
 
 Comandos para activar 
 
