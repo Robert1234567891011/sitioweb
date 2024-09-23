@@ -64,5 +64,8 @@ link de tutorial ----->"https://www.youtube.com/watch?v=Wc2ep3pUrzY"
 
 
 Comandos para migración de BD de sql server y visual studio 2022 .NET 6---------------->
+
 remover migracion------>"Remove-Migration"
+
+
 para migrar --------> "Add-Migration InitialCreate" y "Update-Database"
