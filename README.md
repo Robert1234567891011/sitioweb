@@ -69,3 +69,11 @@ remover migracion------>"Remove-Migration"
 
 
 para migrar --------> "Add-Migration InitialCreate" y "Update-Database"
+
+
+repositorio git----------------->"https://github.com/M0r13n/mikrotik_monitoring"
+
+
+descarga de dockers ----->"https://docs.docker.com/desktop/install/windows-install/"
+
+
