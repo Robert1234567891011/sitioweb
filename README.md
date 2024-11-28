@@ -76,4 +76,21 @@ repositorio git----------------->"https://github.com/M0r13n/mikrotik_monitoring"
 
 descarga de dockers ----->"https://docs.docker.com/desktop/install/windows-install/"
 
+crear cuenta
+https://www.profesionalreview.com/2021/12/04/como-crear-un-usuario-en-windows-11/
+
+para utilizar con IA y catálogos
+
+-https://new.express.adobe.com/(plantillas)
+-Placeit Free Templates(plantillas)
+-https://create.piktochart.com/beta/teams/33234071/editor/4884
+-https://www.pexels.com/es-es/buscar/videos/muebles/(videos y imagenes)
+-https://pixabay.com/es/videos/search/(videos y imagenes)
+
+
+
+
+
+https://new.express.adobe.com/design/template/urn:aaid:sc:VA6C2:212080ff-6c22-415a-adcd-f01cf80df804?category=text&taskID=flyer
+
 
