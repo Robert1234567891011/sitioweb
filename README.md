@@ -88,9 +88,10 @@ para utilizar con IA y catálogos
 -https://pixabay.com/es/videos/search/(videos y imagenes)
 
 
-
-
-
 https://new.express.adobe.com/design/template/urn:aaid:sc:VA6C2:212080ff-6c22-415a-adcd-f01cf80df804?category=text&taskID=flyer
+
+
+-https://slidesgo.com/
+-https://www.freepik.com/
 
 
