@@ -3,9 +3,9 @@
 
 Comandos para activar 
 
------->para activar WINDOW 11:        "irm https://get.activated.win | iex"  
+------>para activar WINDOW 11:        "irm https://get.activated.win | iex" --> 1,1,0
 
------->para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex"
+------>para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex" --> 2,1.0
 
 Atajos para Window 10
 ------>crear punto de restauracion     W+R : "systempropertiesprotection"
