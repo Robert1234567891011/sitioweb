@@ -81,11 +81,23 @@ https://www.profesionalreview.com/2021/12/04/como-crear-un-usuario-en-windows-11
 
 para utilizar con IA y catálogos
 
--https://new.express.adobe.com/(plantillas)
--Placeit Free Templates(plantillas)
--https://create.piktochart.com/beta/teams/33234071/editor/4884
--https://www.pexels.com/es-es/buscar/videos/muebles/(videos y imagenes)
--https://pixabay.com/es/videos/search/(videos y imagenes)
+-  "https://www.template.net/edit-online/675034a011c142c447fba1f7"                (plantillas)
+
+-  "https://creativemarket.com/search/creative-marketing?categoryIDs=1"           (plantillas)
+
+-  "https://www.template.net/"
+
+- IA------>
+-  "https://app.simplified.com/home"
+
+-  "https://designs.ai/"
+
+-  "https://www.photopea.com/"
+
+-  "https://create.vista.com/es/home/"
+
+- "https://www.pexels.com/es-es/buscar/videos/muebles/" (videos y imagenes)
+- "https://pixabay.com/es/videos/search/" (videos y imagenes)
 
 
 https://new.express.adobe.com/design/template/urn:aaid:sc:VA6C2:212080ff-6c22-415a-adcd-f01cf80df804?category=text&taskID=flyer
