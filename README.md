@@ -87,7 +87,16 @@ Navega a la carpeta del proyecto:
 Ejecuta el proyecto para asegurarte de que todo esté bien:
 
 "dotnet run"
+---------
 
+ Limpia y recompila el proyecto
+Si los errores persisten, borra la caché de compilación y recompila el proyecto.
+
+Ejecuta estos comandos en la terminal:
+
+"dotnet clean"
+"dotnet build"
+"dotnet run"
 
 Abre tu navegador en https://localhost:5001 o http://localhost:5000 para ver la aplicación Blazor predeterminada.
 ---------------------------
