@@ -91,7 +91,18 @@ Ejecuta el proyecto para asegurarte de que todo esté bien:
 
 Abre tu navegador en https://localhost:5001 o http://localhost:5000 para ver la aplicación Blazor predeterminada.
 ---------------------------
+2. Instalar Dependencias
+Dentro de la carpeta del proyecto (BCP_Frontend), instala Newtonsoft.Json para manejar JSON en las peticiones HTTP:
 
+"dotnet add package Microsoft.AspNetCore.Components.Web"
+
+"dotnet add package Microsoft.AspNetCore.Components.WebAssembly"
+
+"dotnet add package System.Net.Http.Json"
+
+"dotnet add package Newtonsoft.Json"
+
+--------------
 repositorio git----------------->"https://github.com/M0r13n/mikrotik_monitoring"
 
 
