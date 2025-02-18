@@ -71,18 +71,24 @@ remover migracion------>"Remove-Migration"
 para migrar --------> "Add-Migration InitialCreate" y "Update-Database"
 
 ---------> Crear el Proyecto Blazor
+
 Abre una terminal o el símbolo del sistema.
 
 Ejecuta el siguiente comando para crear un nuevo proyecto Blazor Server:
+
 "dotnet new blazorserver -o BCP_Frontend"
+
 Esto creará una carpeta llamada "BCP_Frontend" con la estructura básica de un proyecto Blazor.
 
 Navega a la carpeta del proyecto:
 
 "cd BCP_Frontend"
+
 Ejecuta el proyecto para asegurarte de que todo esté bien:
 
 "dotnet run"
+
+
 Abre tu navegador en https://localhost:5001 o http://localhost:5000 para ver la aplicación Blazor predeterminada.
 ---------------------------
 
