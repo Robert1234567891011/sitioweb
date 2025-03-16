@@ -7,11 +7,62 @@ Comandos para activar
 
 ------>para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex" --> 2,1.0
 
-Atajos para Window 10
+ATAJOA PARA Window 10
+
 ------>crear punto de restauracion     W+R : "systempropertiesprotection"
 
------->deshabilitarcuenta de usuario   W+R : "lusrmgr.msc"
+------>deshabilitarcuenta de usuario en Window 10, pero no sirve para window 11 home--->  W+R : "lusrmgr.msc"
 
+------>para window 11 home - Para ver información similar en Windows Home, puedes usar---> "netplwiz" o "compmgmt.msc"
+
+COMANDOS PARA GESTIONAR USUARIOS en CMD
+
+Ver todos los usuarios del sistema------------>     "net user"
+
+Crear un nuevo usuario-----------> "net user NuevoUsuario Contraseña /add"
+
+Si quieres crear un usuario llamado "Carlos" con la contraseña "12345"-----------> "net user Carlos 12345 /add"
+
+Cambiar la contraseña de un usuario---------------> "net user Usuario NuevaContraseña"------> Ejemplo: Cambiar la contraseña de "Carlos" a "abc123":---> "net user Carlos abc123"
+
+ Eliminar un usuario--------->   "net user Usuario /delete" ---->Ejemplo: Eliminar el usuario "Carlos":-->"net user Carlos /delete"
+
+COMANDOS PARA GESTIONAR GRUPOS LOCALES
+
+Ver todos los grupos locales:-------> "net localgroup"
+
+Ver los usuarios dentro de un grupo específico: --------> "net localgroup NombreDelGrupo" -----> Ejemplo: Para ver los miembros del grupo de Administradores: -->"net localgroup Administradores"
+
+
+Agregar un usuario a un grupo (darle permisos de Administrador):------->"net localgroup Administradores Usuario /add"--->Ejemplo: Dar permisos de administrador a "Carlos":---->"net localgroup Administradores Carlos /add"
+
+Eliminar un usuario de un grupo:-----> "net localgroup Administradores Usuario /delete"
+
+Ejemplo: Quitar a "Carlos" de los Administradores:------>"net localgroup Administradores Carlos /delete"
+
+EVITAR QUE UNA CUENTA SE DESHABILITE AUTOMATICAMENTE
+
+Si quieres asegurarte de que un usuario nunca se deshabilite (por ejemplo, la cuenta de Administrador), usa este comando en CMD (como Administrador):---✅ Esto garantiza que la cuenta siempre esté habilitada.---->"wmic useraccount where name="Usuario" set AccountDisabled=FALSE"
+
+--->Ejemplo: Si la cuenta se llama "Carlos", ejecuta:---->"wmic useraccount where name="Carlos" set AccountDisabled=FALSE"
+
+DESHABILITAR UNA CUENTA MANUALMENTE
+
+Si quieres deshabilitar una cuenta para que no pueda iniciar sesión, usa este comando:-----> "wmic useraccount where name="Usuario" set AccountDisabled=TRUE"-------->Ejemplo: Para deshabilitar la cuenta "Carlos":----->"wmic useraccount where name="Carlos" set AccountDisabled=TRUE"
+
+Alternativa con net user: "net user Carlos /active:no"
+
+VOLVER A HABILITAR UNA CUENTA DEHABILITAR
+
+Si una cuenta está deshabilitada y quieres activarla nuevamente, usa:-----> "net user Usuario /active:yes"------> Ejemplo: Para activar "Carlos":----->"net user Carlos /active:yes"
+
+VERIFICAR SI UNA CUENTA ESTA HABILITADA O DESHABILITAR
+
+Para ver si una cuenta está activa o deshabilitada, ejecuta en CMD:--->"wmic useraccount where name="Usuario" get Name, AccountDisabled"---->Si el resultado muestra FALSE, la cuenta está habilitada.
+Si muestra TRUE, la cuenta está deshabilitada.
+
+
+ 
 
 Abrir el Administrador de tareas:
 
@@ -63,14 +114,14 @@ USB---------->"https://mega.nz/file/XopmnDQB#URKUuEdpNLiwApQNt32hTi1DqlAfB5aF1Em
 link de tutorial ----->"https://www.youtube.com/watch?v=Wc2ep3pUrzY"
 
 
-Comandos para migración de BD de sql server y visual studio 2022 .NET 6---------------->
+COMANDOS PARA MIGRASION DE BD de sql server y visual studio 2022 .NET 6---------------->
 
 remover migracion------>"Remove-Migration"
 
 
 para migrar --------> "Add-Migration InitialCreate" y "Update-Database"
 
----------> Crear el Proyecto Blazor
+---------> CREAR EL PROYECTO Blazor
 
 Abre una terminal o el símbolo del sistema.
 
