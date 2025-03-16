@@ -61,6 +61,55 @@ VERIFICAR SI UNA CUENTA ESTA HABILITADA O DESHABILITAR
 Para ver si una cuenta está activa o deshabilitada, ejecuta en CMD:--->"wmic useraccount where name="Usuario" get Name, AccountDisabled"---->Si el resultado muestra FALSE, la cuenta está habilitada.
 Si muestra TRUE, la cuenta está deshabilitada.
 
+VERIFICAR CON QUE IP ESTA TU CPU ------->"ipconfig"
+
+PARA PROBAR LA CONECTIVIDAD DEL SERVIDOR INTERNET----->Verificar si tienes Internet (ping a Google)"ping google.com",Ver si un sitio web responde (por ejemplo, Trabajopolis)--> "ping trabajopolis.bo",Hacer ping a Google Translate---> "ping translate.google.com"---->Obtener detalles de red en CMD:--->"ipconfig /all"
+
+VERIFICAR Y REPARAR ARCHIVOS DEL SISTEMA---¿Cuándo usar sfc /scannow?
+✅ Si Windows se congela o tiene errores frecuentes.
+✅ Si las aplicaciones fallan o no responden.
+✅ Después de un apagón o una actualización fallida.
+✅ Si ves mensajes de "Archivos del sistema dañados" o "Windows no puede encontrar un archivo".
+
+--->"sfc /scannow"----Se encontraron archivos corruptos, pero no se pudieron reparar → Ejecuta este comando antes de volver a intentarlo:------>"DISM /Online /Cleanup-Image /RestoreHealth"---->Después de usar DISM, ejecuta de nuevo sfc /scannow.
+
+VERIFICAR ESTADOS DE DISCOS DUROS-->✅ Detecta y corrige errores en el disco (como archivos dañados o sectores defectuosos).
+✅ Mejora el rendimiento del sistema al organizar correctamente los datos en el disco.
+✅ Previene pérdida de datos al reparar problemas antes de que empeoren.------->"chkdsk"
+
+Ejecutar el comando básico (solo escaneo, sin reparar):------>"chkdsk C:"
+
+Escanear y corregir errores automáticamente:---->"chkdsk C: /f"---->/f → Corrige errores en la unidad.
+
+Escaneo profundo con reparación de sectores dañados:------>"chkdsk C: /f /r"---->/f → Repara errores del sistema de archivos.
+/r → Detecta y repara sectores defectuosos en el disco.
+
+COMPROBAR PERMISOS DE USUARIO---->✅ Muestra el nombre del usuario con el que has iniciado sesión.
+✅ Útil para verificar si tienes permisos de administrador o de usuario estándar.
+✅ Puede ser usado en scripts o automatización para identificar al usuario activo.------>"whoami"
+
+INFORMACION DEL SISTEMA----->✅ Muestra la versión exacta de Windows instalada.
+✅ Muestra la arquitectura del sistema (32 o 64 bits).
+✅ Indica la fecha de instalación de Windows.
+✅ Muestra la cantidad de RAM instalada.
+✅ Identifica el nombre del equipo y el dominio al que pertenece.
+✅ Indica si el sistema tiene virtualización habilitada.
+✅ Muestra la fecha del último inicio del sistema
+
+-------->"systeminfo"
+
+ESTADO DE FIREWALL------>Este comando se usa en CMD para ver el estado actual del Firewall de Windows en todos los perfiles de red.
+
+✅ Muestra si el Firewall está activado o desactivado en los distintos perfiles de red.
+✅ Indica si están permitidas las conexiones entrantes y salientes.
+✅ Te ayuda a diagnosticar problemas de red relacionados con el Firewall.----->"netsh advfirewall show allprofiles"
+
+
+
+
+
+
+
 
  
 
