@@ -15,6 +15,14 @@ ATAJOA PARA Window 10
 
 ------>para window 11 home - Para ver información similar en Windows Home, puedes usar---> "netplwiz" o "compmgmt.msc"
 
+------>Este comando abre la ventana de Propiedades del Sistema, donde puedes---->✅ Ver y cambiar el nombre del equipo y grupo de trabajo/dominio.
+✅ Configurar el rendimiento del sistema.
+✅ Administrar las opciones de inicio y recuperación.
+✅ Habilitar o deshabilitar escritorio remoto.
+✅ Configurar variables de entorno.----->"sysdm.cpl"
+
+
+
 COMANDOS PARA GESTIONAR USUARIOS en CMD
 
 Ver todos los usuarios del sistema------------>     "net user"
@@ -105,15 +113,14 @@ ESTADO DE FIREWALL------>Este comando se usa en CMD para ver el estado actual de
 ✅ Te ayuda a diagnosticar problemas de red relacionados con el Firewall.----->"netsh advfirewall show allprofiles"
 
 
+cambiar el tipo de cuenta de un usuario Administrador a Estándar en Windows 11 usando CMD--->1️⃣Presiona Win + R, escribe cmd, luego presiona Ctrl + Shift + Enter para abrirlo con permisos de administrador.-->2️⃣ Ver la lista de usuarios del sistema:"net user"---->Esto te mostrará los nombres de usuario disponibles en el sistema.------->3️⃣ Remover al usuario del grupo de Administradores:---->"net localgroup Administradores Usuario /delete"------>Ejemplo: Si el usuario se llama "Carlos", usa:--->"net localgroup Administradores Carlos /delete"-------->4️⃣ Verificar que el usuario ya no es administrador:---->"net localgroup Administradores"----->El usuario no debe aparecer en la lista.
+
+ ¿Cómo volver a hacer Administrador a un usuario?
+
+ Si más adelante quieres devolverle permisos de Administrador al usuario, usa este comando:--->"net localgroup Administradores Usuario /add"---Ejemplo:--->"net localgroup Administradores Carlos /add"
 
 
-
-
-
-
- 
-
-Abrir el Administrador de tareas:
+ATAJOS PARA----->Abrir el Administrador de tareas:
 
 Ctrl + Shift + Esc
 Abrir el Explorador de archivos:
