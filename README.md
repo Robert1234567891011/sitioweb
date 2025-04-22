@@ -7,9 +7,21 @@ Comandos para activar
 
 ------>para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex" --> 2,1.0
 
-ATAJOA PARA Window 10, 11
+------>¿Cómo saber si estoy en UEFI o Legacy?
 
-------->verificar informacion completa de equipo  W+R : "msinfo32"
+    :  En Windows----verificar informacion completa de equipo---->
+    
+Presiona Win + R, escribe "msinfo32" y pulsa Enter.
+
+Busca "Modo BIOS":
+
+Si dice "UEFI", estás en modo UEFI.
+
+Si dice "Legacy", estás en BIOS tradicional.
+
+En Linux-------->  Ejecuta en la terminal: "ls /sys/firmware/efi"
+
+ATAJOS PARA Window 10, 11
 
 ------>crear punto de restauracion     W+R : "systempropertiesprotection"
 
