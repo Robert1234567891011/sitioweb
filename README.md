@@ -22,9 +22,13 @@ ATAJOA PARA Window 10, 11
 ------>Este comando abre la ventana de Propiedades del Sistema, donde puedes---->
 
 ✅ Ver y cambiar el nombre del equipo y grupo de trabajo/dominio.
+
 ✅ Configurar el rendimiento del sistema.
+
 ✅ Administrar las opciones de inicio y recuperación.
+
 ✅ Habilitar o deshabilitar escritorio remoto.
+
 ✅ Configurar variables de entorno.----->"sysdm.cpl"
 
 
@@ -80,15 +84,23 @@ VERIFICAR CON QUE IP ESTA TU CPU ------->"ipconfig"
 PARA PROBAR LA CONECTIVIDAD DEL SERVIDOR INTERNET----->Verificar si tienes Internet (ping a Google)"ping google.com",Ver si un sitio web responde (por ejemplo, Trabajopolis)--> "ping trabajopolis.bo",Hacer ping a Google Translate---> "ping translate.google.com"---->Obtener detalles de red en CMD:--->"ipconfig /all"
 
 VERIFICAR Y REPARAR ARCHIVOS DEL SISTEMA---¿Cuándo usar sfc /scannow?
+
 ✅ Si Windows se congela o tiene errores frecuentes.
+
 ✅ Si las aplicaciones fallan o no responden.
+
 ✅ Después de un apagón o una actualización fallida.
+
 ✅ Si ves mensajes de "Archivos del sistema dañados" o "Windows no puede encontrar un archivo".
 
 --->"sfc /scannow"----Se encontraron archivos corruptos, pero no se pudieron reparar → Ejecuta este comando antes de volver a intentarlo:------>"DISM /Online /Cleanup-Image /RestoreHealth"---->Después de usar DISM, ejecuta de nuevo sfc /scannow.
 
-VERIFICAR ESTADOS DE DISCOS DUROS-->✅ Detecta y corrige errores en el disco (como archivos dañados o sectores defectuosos).
+VERIFICAR ESTADOS DE DISCOS DUROS-->
+
+✅ Detecta y corrige errores en el disco (como archivos dañados o sectores defectuosos).
+
 ✅ Mejora el rendimiento del sistema al organizar correctamente los datos en el disco.
+
 ✅ Previene pérdida de datos al reparar problemas antes de que empeoren.------->"chkdsk"
 
 Ejecutar el comando básico (solo escaneo, sin reparar):------>"chkdsk C:"
@@ -98,28 +110,52 @@ Escanear y corregir errores automáticamente:---->"chkdsk C: /f"---->/f → Corr
 Escaneo profundo con reparación de sectores dañados:------>"chkdsk C: /f /r"---->/f → Repara errores del sistema de archivos.
 /r → Detecta y repara sectores defectuosos en el disco.
 
-COMPROBAR PERMISOS DE USUARIO---->✅ Muestra el nombre del usuario con el que has iniciado sesión.
+COMPROBAR PERMISOS DE USUARIO---->
+
+✅ Muestra el nombre del usuario con el que has iniciado sesión.
+
 ✅ Útil para verificar si tienes permisos de administrador o de usuario estándar.
+
 ✅ Puede ser usado en scripts o automatización para identificar al usuario activo.------>"whoami"
 
-INFORMACION DEL SISTEMA----->✅ Muestra la versión exacta de Windows instalada.
+INFORMACION DEL SISTEMA----->
+
+✅ Muestra la versión exacta de Windows instalada.
+
 ✅ Muestra la arquitectura del sistema (32 o 64 bits).
+
 ✅ Indica la fecha de instalación de Windows.
+
 ✅ Muestra la cantidad de RAM instalada.
+
 ✅ Identifica el nombre del equipo y el dominio al que pertenece.
+
 ✅ Indica si el sistema tiene virtualización habilitada.
+
 ✅ Muestra la fecha del último inicio del sistema
 
 -------->"systeminfo"
 
-ESTADO DE FIREWALL------>Este comando se usa en CMD para ver el estado actual del Firewall de Windows en todos los perfiles de red.
+ESTADO DE FIREWALL------>
+
+Este comando se usa en CMD para ver el estado actual del Firewall de Windows en todos los perfiles de red.
 
 ✅ Muestra si el Firewall está activado o desactivado en los distintos perfiles de red.
+
 ✅ Indica si están permitidas las conexiones entrantes y salientes.
+
 ✅ Te ayuda a diagnosticar problemas de red relacionados con el Firewall.----->"netsh advfirewall show allprofiles"
 
 
-cambiar el tipo de cuenta de un usuario Administrador a Estándar en Windows 11 usando CMD--->1️⃣Presiona Win + R, escribe cmd, luego presiona Ctrl + Shift + Enter para abrirlo con permisos de administrador.-->2️⃣ Ver la lista de usuarios del sistema:"net user"---->Esto te mostrará los nombres de usuario disponibles en el sistema.------->3️⃣ Remover al usuario del grupo de Administradores:---->"net localgroup Administradores Usuario /delete"------>Ejemplo: Si el usuario se llama "Carlos", usa:--->"net localgroup Administradores Carlos /delete"-------->4️⃣ Verificar que el usuario ya no es administrador:---->"net localgroup Administradores"----->El usuario no debe aparecer en la lista.
+cambiar el tipo de cuenta de un usuario Administrador a Estándar en Windows 11 usando CMD--->
+
+1️⃣Presiona Win + R, escribe cmd, luego presiona Ctrl + Shift + Enter para abrirlo con permisos de administrador.-->
+
+2️⃣ Ver la lista de usuarios del sistema:"net user"---->Esto te mostrará los nombres de usuario disponibles en el sistema.------->
+
+3️⃣ Remover al usuario del grupo de Administradores:---->"net localgroup Administradores Usuario /delete"------>Ejemplo: Si el usuario se llama "Carlos", usa:--->"net localgroup Administradores Carlos /delete"-------->
+
+4️⃣ Verificar que el usuario ya no es administrador:---->"net localgroup Administradores"----->El usuario no debe aparecer en la lista.
 
  ¿Cómo volver a hacer Administrador a un usuario?
 
