@@ -62,7 +62,9 @@ Ejemplo: Quitar a "Carlos" de los Administradores:------>"net localgroup Adminis
 
 EVITAR QUE UNA CUENTA SE DESHABILITE AUTOMATICAMENTE
 
-Si quieres asegurarte de que un usuario nunca se deshabilite (por ejemplo, la cuenta de Administrador), usa este comando en CMD (como Administrador):---✅ Esto garantiza que la cuenta siempre esté habilitada.---->"wmic useraccount where name="Usuario" set AccountDisabled=FALSE"
+Si quieres asegurarte de que un usuario nunca se deshabilite (por ejemplo, la cuenta de Administrador), usa este comando en CMD (como Administrador):
+
+Esto garantiza que la cuenta siempre esté habilitada.---->"wmic useraccount where name="Usuario" set AccountDisabled=FALSE"
 
 --->Ejemplo: Si la cuenta se llama "Carlos", ejecuta:---->"wmic useraccount where name="Carlos" set AccountDisabled=FALSE"
 
