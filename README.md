@@ -7,15 +7,21 @@ Comandos para activar
 
 ------>para activar OFFICE 2024:      "irm https://massgrave.dev/get | iex" --> 2,1.0
 
-ATAJOA PARA Window 10
+ATAJOA PARA Window 10, 11
+
+------->verificar informacion completa de equipo  W+R : "msinfo32"
 
 ------>crear punto de restauracion     W+R : "systempropertiesprotection"
 
 ------>deshabilitarcuenta de usuario en Window 10, pero no sirve para window 11 home--->  W+R : "lusrmgr.msc"
 
+------->para ingresar a particiones   W+R : "diskmgmt.msc"
+
 ------>para window 11 home - Para ver información similar en Windows Home, puedes usar---> "netplwiz" o "compmgmt.msc"
 
------->Este comando abre la ventana de Propiedades del Sistema, donde puedes---->✅ Ver y cambiar el nombre del equipo y grupo de trabajo/dominio.
+------>Este comando abre la ventana de Propiedades del Sistema, donde puedes---->
+
+✅ Ver y cambiar el nombre del equipo y grupo de trabajo/dominio.
 ✅ Configurar el rendimiento del sistema.
 ✅ Administrar las opciones de inicio y recuperación.
 ✅ Habilitar o deshabilitar escritorio remoto.
@@ -23,7 +29,7 @@ ATAJOA PARA Window 10
 
 
 
-COMANDOS PARA GESTIONAR USUARIOS en CMD
+COMANDOS PARA GESTIONAR USUARIOS en CMD  : ingresar a CMD
 
 Ver todos los usuarios del sistema------------>     "net user"
 
