@@ -39,6 +39,14 @@ instalar el siguiente archivo ---->  "https://github.com/akruhler/AccountManagem
 
 - Configurar el rendimiento del sistema.
 
+- CAMBIAR EL NOMBRE DEL EQUIPO solo con powerShell como administrador  -------> :
+
+1.- "Rename-Computer -NewName "NUEVO_NOMBRE" -Force"
+
+2.- "Restart-Computer"
+
+3.- "hostname"
+
 - Administrar las opciones de inicio y recuperación.
 
 - Habilitar o deshabilitar escritorio remoto.
