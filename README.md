@@ -65,11 +65,11 @@ Crear un nuevo usuario-----------> "net user NuevoUsuario Contraseña /add"
 
 Si quieres crear un usuario llamado "Carlos" con la contraseña "12345"-----------> "net user Carlos 12345 /add"
 
-Cambiar la contraseña de un usuario---------------> "net user Usuario NuevaContraseña"------> Ejemplo: Cambiar la contraseña de "Carlos" a "abc123":---> "net user Carlos abc123"
+Cambiar la contraseña de un usuario---------------> "net user Carlos abc123"
 
- Eliminar el usuario "Carlos":-->"net user Carlos /delete"
+Eliminar el usuario "Carlos":-->"net user Carlos /delete"
 
- Deshabilitar y habilitar usuario------------>  "net user Carlos /active: no" o "net user Carlos /active: yes"
+Deshabilitar y habilitar usuario------------>  "net user Carlos /active: no" o "net user Carlos /active: yes"
 
 COMANDOS PARA GESTIONAR GRUPOS LOCALES
 
