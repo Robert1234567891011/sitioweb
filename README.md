@@ -52,7 +52,9 @@ instalar el siguiente archivo ---->  "https://github.com/akruhler/AccountManagem
 - Habilitar o deshabilitar escritorio remoto.
 
 - Configurar variables de entorno.----->"sysdm.cpl"
+  
 
+W+R y cambiar nombre de usuario con --------> "netplwiz"    propiedades
 
 
 COMANDOS PARA GESTIONAR USUARIOS en CMD  : ingresar a CMD
@@ -65,7 +67,9 @@ Si quieres crear un usuario llamado "Carlos" con la contraseña "12345"---------
 
 Cambiar la contraseña de un usuario---------------> "net user Usuario NuevaContraseña"------> Ejemplo: Cambiar la contraseña de "Carlos" a "abc123":---> "net user Carlos abc123"
 
- Eliminar un usuario--------->   "net user Usuario /delete" ---->Ejemplo: Eliminar el usuario "Carlos":-->"net user Carlos /delete"
+ Eliminar el usuario "Carlos":-->"net user Carlos /delete"
+
+ Deshabilitar y habilitar usuario------------>  "net user Carlos /active: no" o "net user Carlos /active: yes"
 
 COMANDOS PARA GESTIONAR GRUPOS LOCALES
 
