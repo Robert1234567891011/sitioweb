@@ -19,17 +19,22 @@ Comandos para activar
 
 ------>¿Cómo saber si estoy en UEFI o Legacy?
 
-    :  En Windows----verificar informacion completa de equipo---->
-    
-Presiona Win + R, escribe "msinfo32" y pulsa Enter.
-
 Busca "Modo BIOS":
+
+Presiona Win + R, escribe "msinfo32" y pulsa Enter.
 
 Si dice "UEFI", estás en modo UEFI.
 
 Si dice "Legacy", estás en BIOS tradicional.
 
 En Linux-------->  Ejecuta en la terminal: "ls /sys/firmware/efi"
+
+En Windows----verificar informacion completa de equipo---->
+
+Con CMD : ------------> "systeminfo"
+
+Verificar con CMD si el disco es GPT o MBR  :  ----> "diskpart"  luego  "list disk"
+
 
 ATAJOS PARA Window 10, 11
 
