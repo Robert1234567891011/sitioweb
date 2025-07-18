@@ -383,7 +383,7 @@ Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Select-Object FriendlyNam
 Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Format-Table FriendlyName, Status
 
 
-
+--------------------------------------------------------------------------------------------------
 
 # checklist_bd.ps1
 # Autor: Richard Poma - Monitoreo de BD
