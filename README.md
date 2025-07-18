@@ -381,3 +381,130 @@ Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Select-Object FriendlyNam
 
 # Listar dispositivos sin drivers
 Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Format-Table FriendlyName, Status
+
+
+
+
+# checklist_bd.ps1
+# Autor: Richard Poma - Monitoreo de BD
+# Fecha: 2025
+
+function Test-Ping {
+    param([string]$ip)
+    if (Test-Connection -ComputerName $ip -Count 2 -Quiet) {
+        Write-Host "PING $ip ---> OK" -ForegroundColor Green
+        return $true
+    } else {
+        Write-Host "PING $ip ---> ERROR" -ForegroundColor Red
+        return $false
+    }
+}
+
+Write-Host "===== MONITOREO DE BASE DE DATOS =====" -ForegroundColor Cyan
+
+# 1. PRESUPUESTO
+if (Test-Ping -ip "10.72.40.61") {
+    Start-Process "http://apppresupuestos.bdpst.com.bo/web/ingresoprincipal.aspx"
+    Start-Process "mstsc.exe" -ArgumentList "/v:10.72.40.61"
+    Write-Host "Recuerda: En el RDP buscar 'Presupuesto' → clic derecho → Task → Back Up..." -ForegroundColor Yellow
+}
+
+# 2. OSTICKET
+if (Test-Ping -ip "10.72.40.24") {
+    Start-Process "http://10.72.40.24/phpmyadmin/index.php?route=/database/export&db=osticket"
+    Write-Host "Exportar y descargar BD 'osticket' desde el navegador." -ForegroundColor Yellow# checklist_bd.ps1
+# Autor: Richard Poma - Monitoreo de BD
+# Fecha: 2025
+
+function Test-Ping {
+    param([string]$ip)
+    if (Test-Connection -ComputerName $ip -Count 2 -Quiet) {
+        Write-Host "PING $ip ---> OK" -ForegroundColor Green
+        return $true
+    } else {
+        Write-Host "PING $ip ---> ERROR" -ForegroundColor Red
+        return $false
+    }
+}
+
+Write-Host "===== MONITOREO DE BASE DE DATOS =====" -ForegroundColor Cyan
+
+# 1. PRESUPUESTO
+if (Test-Ping -ip "10.72.40.61") {
+    Start-Process "http://apppresupuestos.bdpst.com.bo/web/ingresoprincipal.aspx"
+    Start-Process "mstsc.exe" -ArgumentList "/v:10.72.40.61"
+    Write-Host "Recuerda: En el RDP buscar 'Presupuesto' → clic derecho → Task → Back Up..." -ForegroundColor Yellow
+}
+
+# 2. OSTICKET
+if (Test-Ping -ip "10.72.40.24") {
+    Start-Process "http://10.72.40.24/phpmyadmin/index.php?route=/database/export&db=osticket"
+    Write-Host "Exportar y descargar BD 'osticket' desde el navegador." -ForegroundColor Yellow
+}
+
+# 3. UIF
+Start-Process "http://svr-apph/phpmyadmin/db_export.php?db=intranet"
+Write-Host "Exportar y descargar BD 'uif' desde navegador." -ForegroundColor Yellow
+
+# 4. SCRIPT EN 10.72.40.23
+if (Test-Ping -ip "10.72.40.23") {
+    Start-Process "mstsc.exe" -ArgumentList "/v:10.72.40.23"
+    Write-Host "Ejecutar el script manualmente en el servidor y cambiar fecha de documentos." -ForegroundColor Yellow
+}
+
+# 5. COPIA DE BACKUP DESDE 10.72.40.26
+$destino = "$env:USERPROFILE\Downloads"
+$origen = "\\10.72.40.26\c$\BACKUPS BD"
+if (Test-Path $origen) {
+    Get-ChildItem -Path "$origen" -Filter "*PRESUPUESTO*" | Copy-Item -Destination $destino -Force
+    Write-Host "Copia de archivos PRESUPUESTO desde $origen a Descargas completada." -ForegroundColor Green
+} else {
+    Write-Host "No se pudo acceder a $origen" -ForegroundColor Red
+}
+
+# 6. COPIA DESDE 10.72.40.14
+$bkbd = "\\10.72.40.14\j\BKBD"
+if (Test-Path $bkbd) {
+    Write-Host "Copiar manualmente archivos desde: $bkbd" -ForegroundColor YelloW
+    Start-Process "explorer.exe" $bkbd
+} else {
+    Write-Host "No se pudo acceder a $bkbd" -ForegroundColor Red
+}
+
+Write-Host "MONITOREO DE BD FINALIZADO " -ForegroundColor Cyan
+Pause
+
+}
+
+# 3. UIF
+Start-Process "http://svr-apph/phpmyadmin/db_export.php?db=intranet"
+Write-Host "Exportar y descargar BD 'uif' desde navegador." -ForegroundColor Yellow
+
+# 4. SCRIPT EN 10.72.40.23
+if (Test-Ping -ip "10.72.40.23") {
+    Start-Process "mstsc.exe" -ArgumentList "/v:10.72.40.23"
+    Write-Host "Ejecutar el script manualmente en el servidor y cambiar fecha de documentos." -ForegroundColor Yellow
+}
+
+# 5. COPIA DE BACKUP DESDE 10.72.40.26
+$destino = "$env:USERPROFILE\Downloads"
+$origen = "\\10.72.40.26\c$\BACKUPS BD"
+if (Test-Path $origen) {
+    Get-ChildItem -Path "$origen" -Filter "*PRESUPUESTO*" | Copy-Item -Destination $destino -Force
+    Write-Host "Copia de archivos PRESUPUESTO desde $origen a Descargas completada." -ForegroundColor Green
+} else {
+    Write-Host "No se pudo acceder a $origen" -ForegroundColor Red
+}
+
+# 6. COPIA DESDE 10.72.40.14
+$bkbd = "\\10.72.40.14\j\BKBD"
+if (Test-Path $bkbd) {
+    Write-Host "Copiar manualmente archivos desde: $bkbd" -ForegroundColor YelloW
+    Start-Process "explorer.exe" $bkbd
+} else {
+    Write-Host "No se pudo acceder a $bkbd" -ForegroundColor Red
+}
+
+Write-Host "MONITOREO DE BD FINALIZADO " -ForegroundColor Cyan
+Pause
+
