@@ -340,3 +340,44 @@ https://new.express.adobe.com/design/template/urn:aaid:sc:VA6C2:212080ff-6c22-41
 -https://www.freepik.com/
 
 
+-------------------------------------------------------------
+
+
+
+# Descargar HP Support Assistant (oficial)
+Start-BitsTransfer -Source "https://ftp.hp.com/pub/caps-softpaq/cmit/HPIA.exe" -Destination "$env:TEMP\HPIA.exe"
+
+# Instalar drivers automáticamente
+Start-Process -FilePath "$env:TEMP\HPIA.exe" -ArgumentList "/Silent /Install /AcceptEULA" -Wait
+
+
+
+pnputil /add-driver "C:\Drivers\*.inf" /install /subdirs
+
+
+# Chipset (Intel)
+pnputil /add-driver "C:\Drivers\Chipset\*.inf" /install
+
+# Gráficos (Intel HD 4400)
+pnputil /add-driver "C:\Drivers\Graphics\*.inf" /install
+
+# Wi-Fi (Intel/Realtek)
+pnputil /add-driver "C:\Drivers\WiFi\*.inf" /install
+
+
+
+
+# Forzar búsqueda de drivers en Windows Update
+Start-Process -FilePath "ms-settings:windowsupdate" -Wait
+
+
+
+
+
+Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Select-Object FriendlyName, InstanceId
+
+
+
+
+# Listar dispositivos sin drivers
+Get-PnpDevice | Where-Object {$_.Status -eq "Error"} | Format-Table FriendlyName, Status
