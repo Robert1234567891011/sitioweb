@@ -1,4 +1,50 @@
-# sitioweb
+
+Comando CMD para Identificar IPs de Todas las Impresoras
+
+Puedes usar este comando universal en CMD (funciona para Windows 10/11) que detectará automáticamente todas las impresoras de red con sus IPs, incluyendo las de tu archivo Excel:
+
+
+
+--->powershell -command "Get-WmiObject Win32_Printer | Where-Object {$_.PortName -match '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+'} | Select Name, PortName, DriverName | Format-Table -AutoSize"
+
+
+--->powershell -command "$printers = Get-WmiObject Win32_Printer; $ports = Get-WmiObject Win32_TCPIPPrinterPort; foreach ($printer in $printers) { if ($printer.PortName -match '(\d{1,3}\.){3}\d{1,3}') { $port = $ports | Where-Object {$_.Name -eq $printer.PortName}; [PSCustomObject]@{ 'Impresora'=$printer.Name; 'IP'=$printer.PortName; 'Controlador'=$printer.DriverName; 'Puerto'=$port.PortNumber; 'Protocolo'=if($port.Protocol -eq 1){'RAW'}else{'LPR'} } } } | Format-Table -AutoSize"
+
+
+
+Resultado Esperado (Ejemplo):
+
+Impresora                     IP           Controlador                  Puerto Protocolo
+---------                     --           -----------                  ------ ---------
+HP COLOR LASERJET M652        10.72.40.37  HP Color LaserJet M651 PCL6  9100   RAW
+HP LASER JET M402dn           10.72.40.41  HP LaserJet M402 PCL6        9100   RAW
+Xerox b7030                   10.72.40.42  Xerox B7030 PCL6             9100   RAW
+
+
+------------->powershell -command "Get-Printer -Full | Where-Object {$_.Type -eq 'TCP'} | Select-Object Name, PortName, DriverName | Format-Table -AutoSize"
+
+
+----->powershell -command "Get-Printer -Full | Where-Object {$_.PortName -match '\\d+\\.\\d+\\.\\d+\\.\\d+'} | Select-Object Name, PortName, DriverName, Shared, Published, ComputerName | Format-List"
+
+
+
+1.-Abre el Administrador de impresoras:
+
+-Presiona "Windows + R", escribe "control printers" y presiona Enter
+
+2.-Haz clic derecho en tu impresora → Propiedades de impresora
+
+3.-Ve a la pestaña "Puertos":
+
+-El puerto marcado con ✓ es el que está usando actualmente
+
+-Para impresoras de red HP, debería ser un puerto TCP/IP con la IP 10.72.40.37
+
+
+
+
+
+
 Comandos necesarios para pasar windows 11 Home a PRO cmd------>
 
 "sc config LicenseManager start= auto & net start LicenseManager"
@@ -10,6 +56,8 @@ Comandos necesarios para pasar windows 11 Home a PRO cmd------>
 "exit"
 
 "exit"
+
+
 
 Comandos para activar 
 
