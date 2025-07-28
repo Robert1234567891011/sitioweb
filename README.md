@@ -1,25 +1,3 @@
-1. Menú de Configuración de la Impresora (Método Universal)
-   
-
-Pasos:
-
-1.- Conecta solo el cable de alimentación
-
-
-2.- En el panel de control de la impresora:
-
-
---->HP: Ve a Configuración → Información → Información de red
-
-
---->Xerox: Menú → Configuración → Preferencias → Config. red
-
-
---->Brother: Configuración → Información → Listado de configuración
-
-
-3.- Busca la opción "Imprimir configuración" (generalmente manteniendo un botón 5-10 segundos)
-
 
 
 Comando CMD para Identificar IPs de Todas las Impresoras
