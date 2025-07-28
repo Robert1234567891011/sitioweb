@@ -12,15 +12,6 @@ Puedes usar este comando universal en CMD (funciona para Windows 10/11) que dete
 
 
 
-Resultado Esperado (Ejemplo):
-
-Impresora                     IP           Controlador                  Puerto Protocolo
----------                     --           -----------                  ------ ---------
-HP COLOR LASERJET M652        10.72.40.37  HP Color LaserJet M651 PCL6  9100   RAW
-HP LASER JET M402dn           10.72.40.41  HP LaserJet M402 PCL6        9100   RAW
-Xerox b7030                   10.72.40.42  Xerox B7030 PCL6             9100   RAW
-
-
 ------------->powershell -command "Get-Printer -Full | Where-Object {$_.Type -eq 'TCP'} | Select-Object Name, PortName, DriverName | Format-Table -AutoSize"
 
 
