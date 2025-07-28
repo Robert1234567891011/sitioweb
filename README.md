@@ -1,3 +1,19 @@
+Método 1: Informe de Configuración (Funciona en la mayoría de impresoras)
+
+
+-Conecta solo el cable de alimentación
+
+
+-Mantén pulsado el botón "Cancelar" o "Informe" por 5-10 segundos
+
+
+-La impresora imprimirá un reporte
+
+
+Método 2: Menú de Configuración
+
+Usa los botones del panel para navegar a:---->
+Configuración → Información → Configuración de Red → TCP/IP
 
 
 Comando CMD para Identificar IPs de Todas las Impresoras
