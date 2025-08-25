@@ -1,3 +1,36 @@
+Completar el serialumber wmic  bios get serialnumber:
+
+
+
+wmic bios get serialnumber
+
+
+wmic bios get serialnumber /value
+
+
+MÉTODOS PARA COMPLETAR EL CÓDIGO DE ACTIVO:
+
+# Requiere ejecutar como ADMINISTRADOR
+
+$AssetTag = "IT-2024-001"  # Reemplaza con tu código
+
+$Enclosure = Get-CimInstance -ClassName Win32_SystemEnclosure
+
+$Enclosure | Set-CimInstance -Property @{SMBIOSAssetTag = $AssetTag}
+
+
+Usando WMI (Alternativa)
+
+# Ejecutar como Administrador
+$AssetCode = "ACTIVO-001"
+Set-WmiInstance -Class Win32_SystemEnclosure -Argument @{SMBIOSAssetTag = $AssetCode}
+
+
+
+
+wmic csproduct get identifyingnumber
+
+
 Método 1: Informe de Configuración (Funciona en la mayoría de impresoras)
 
 
